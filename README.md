@@ -5,6 +5,8 @@
 https://user-images.githubusercontent.com/114822037/217674258-57143fa7-29c6-4198-9f17-799e61aa0422.mp4
 
 
+<p> Clique <a href="https://beatrizcdsmartins.github.io/meu-portf-lio/">aqui</a> para conferir!</p>
+
 
 <h3> <img width="40px" src="https://user-images.githubusercontent.com/114822037/211057912-e4111ff7-3e58-4e06-add5-2a7e5b97efcb.png"/>
  Tecnologias Utilizadas: </h3>
