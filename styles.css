@@ -20,9 +20,12 @@ header{
 }
 
 
+
+
 .menu-icon, .name-mobile{
     display: none;
 }
+
 
 
 li {
@@ -38,6 +41,7 @@ a {
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 20px;
+
 }
 
 
@@ -61,15 +65,31 @@ ul li a:hover {
 
 
 .main{
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10vh;
     width: 100%;
+    position: relative;
+    background-image: url(./assets/fotos1&2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
 
 }
 
-.main .name-desktop {
+.phrase-mobile{
+    display: none;
+}
+
+.main h2{
+
 
     font-weight: 900;
-    font-size: max(40px, 4vw);
+    font-size: max(4vw, 40px);
     margin: 10px 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -78,50 +98,11 @@ ul li a:hover {
 
 }
 
-.fotos{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-}
-
-.second-photo{
-    position: absolute;
-    top: 90%;
-    right: 50%;
-}
-
-.container-write{
-    width: 35vw;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 20%;
-    margin-left: 20px;
-}
-
-
-.paragraph-container{
-    position: relative;
-    display: inline-block;
-    width: 36vw;
-    left: 60%;
-    top: 10%;
-}
-
-
-.paragraph-container p{
-    position: absolute;
-    letter-spacing: 1px;
-    font-size: max(20px, 1.5vw);
-}
 
 .triangle{
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 400px;
-    position: relative;
     padding-left: 10px;
 
 }
@@ -130,15 +111,53 @@ ul li a:hover {
     width:10vw;
     left: 10%;
     animation: triangle calc(180s/ var(--i)) linear infinite;
+    
+
+}
+
+.parag-triangle{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
+   
+
+}
+
+.title-container{
+    margin-left: 60px;
+    width: 35%;
+ 
 }
 
 .scroll{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     animation: scroll 1s linear infinite;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 20px;
+   
+   
 }
+
+.phrase-desktop{
+    width: 500px;
+   
+  padding: 10px;
+}
+
+.phrase-desktop p{
+    font-size: max(2.5vmin, 20px);
+ 
+
+    
+}
+
 
 @keyframes scroll {
     to{
@@ -223,16 +242,22 @@ ul li a:hover {
 }
 
 
+
+
 /* ALA PROJETOS */
 
 .project-container {
+  
     padding-bottom: 10%;
+  
+
 }
 
 
 .title-content {
     display: flex;
     justify-content: center;
+
 }
 
 .title-content h1 {
@@ -241,6 +266,7 @@ ul li a:hover {
     letter-spacing: 2px;
     color: rgb(0, 0, 0);
     font-size: max(30px, 2vw);
+
 }
 
 .title-content::after{
@@ -271,6 +297,7 @@ ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
     z-index: 1;
+
 }
 
 
@@ -288,6 +315,7 @@ ul li a:hover {
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
+
 }
 
 .cards-container #card-one {
@@ -305,6 +333,8 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+
 }
 
 .cards-container #card-three {
@@ -313,6 +343,9 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+   
+
+
 }
 
 .cards-container #card-four {
@@ -321,6 +354,7 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
 .cards-container #card-five {
@@ -329,6 +363,7 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
 
@@ -418,18 +453,20 @@ ul li a:hover {
 
  #sobre{
     display: flex;
+    justify-content: space-around;
+
+
  }
 
 
  .right-about{
-    width: 50vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 20px;
     align-items: center;
-    gap: 2vh;
-    padding: 30px;
+    width: 70%;
+    padding: 40px;
 
  }
 
@@ -439,16 +476,26 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-size: min(500px, 50vw);
     width: 50vw;
+    height: 700px;
+
 
     
 }
 
-.paragraph-about p{
-    font-size: max(15px, 1vw);
-    max-width: 750px;
+.paragraph-about{
 
-
+    max-width:600px;
+    font-size: max(2.3vmin, 15px);
 }
+
+
+
+.right-about h2{
+    font-size: max(30px, 0.5vw);
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
 
 .paragraph-about span{
     font-weight: 600;
@@ -462,7 +509,7 @@ ul li a:hover {
 .dowload-cv-button{
     border-radius: 40px;
     width: 40%;
-    height: 5vh;
+    height: 50px;
     background-color: #bb2649;
     color: white;
     border: none;
@@ -477,7 +524,6 @@ ul li a:hover {
     font-weight:500;
     letter-spacing: 1px;
    
-    
 
 }
 
@@ -492,19 +538,19 @@ ul li a:hover {
     
 }
 
-.right-about h2{
-    font-size: max(30px, 0.5vw);
-    font-weight: bolder;
-    opacity: 0.5;
-}
-
 
 
 /* HABILIDADES */
 
 .section-habilities{
     background-color: #bb2649;
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+
 }
 
 
@@ -516,11 +562,11 @@ ul li a:hover {
 }
 
 .icons{
-    width: 100px;
+    width: max(2vmin, 80px);
 }
 
 .css-icon{
-    width: 120px;
+    width: max(2.1vmin, 88px);
 }
 
 .icons-habilities img{
@@ -531,42 +577,14 @@ ul li a:hover {
 
 .title-content-hability h1{
     color: white;
-    margin: 90px 0 50px 0;
     font-weight:300;
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: max(3vmin, 35px);
  
 }
 
-.title-content-hability::after{
-    content: '';
-    width: 10%;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    top: 20px;
-    margin-left: 10px;
-   
-}
-
-.title-content-hability::before{
-    content: '';
-    width: 10%;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    top: 20px;
-    margin-right: 10px;
-   
-}
 
 
-.title-content-hability{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-}
 
 .icons-habilities img:hover{
     transform: scale(1.2);
@@ -630,6 +648,86 @@ ul li a:hover {
 @media screen and (max-width:1000px) {
 
 
+    .main{
+        height: 90vh;
+        margin-top: 10vh;
+        width: 100%;
+        position: relative;
+        background-image: url(./assets/mobile_photo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:max(40vmin, 200px);
+      
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    
+    
+    
+    }
+
+
+
+    .title-container{
+
+        width: 400px;
+        padding: 20px;
+        margin: 0 0 20px 0;
+     
+       
+     
+    }
+
+
+    
+    .triangle{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 10px;
+ 
+       position: absolute;
+       left: 0;
+       top:0;
+       margin-left: 20px;
+    
+       
+    
+    }
+    
+    .triangle img{
+  
+        position: relative;
+        left: 0;
+        width:10vw;
+        left: 10%;
+        animation: triangle calc(180s/ var(--i)) linear infinite;
+        
+    
+    }
+    
+    .parag-triangle{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50%;
+       
+    
+    }
+    
+
+    .icons{
+        width: max(8vmin, 30px);
+    }
+    
+    .css-icon{
+        width: max(8.2vmin, 34px);
+    }
+    
+
+
     .cards-container .card .content {
         transform: translateX(0);
         opacity: 1;
@@ -639,6 +737,7 @@ ul li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
+      
     }
 
     .cards-container #card-six .content {
@@ -647,23 +746,21 @@ ul li a:hover {
     }
 
 
-     .icons-habilities img{
-       width: 10%;
-    } 
-
     .paragraph-about p{
         text-align: center;
     }
 
     .right-about{
-        height: 75vh;
-        width: max(50vw,80%);
-        gap: 40px;
-        padding: 0;
+        padding: 30px 0;
+        
+
     }
 
     .dowload-cv-button{
-        width: 100%;
+        width: 80%;
+        height: 35px;
+
+
     }
 
     #sobre{
@@ -687,6 +784,7 @@ ul li a:hover {
         overflow: hidden;
         transition:  0.8s ease-in-out;
         cursor: pointer;
+     
     }
   
 
@@ -696,9 +794,12 @@ ul li a:hover {
         display: block;
         position: fixed;
         top: 10px;
+        
         right: 0;
         margin-right: 10px;
         filter: invert(100%);
+       
+
     }
 
     .nav-li{
@@ -709,49 +810,18 @@ ul li a:hover {
         display: none;
     }
 
-  
-    
-    .first-photo{
-        border-radius: 100%;
-        position: relative;
-        top:20vh;
-    }
-    
-    #inicio{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-write{
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 80%;
-    }
-
-    .container-write h2{
-        max-width: 350px;
-        color: #000000cc;
-    }
 
 }
 
 
-@media screen and (max-width:400px) {
+
+@media screen and (max-width:500px) {
 
     .right-about{
         height: 100%;
         width:90%;
         gap: 40px;
-    }
-
-    .container-write h2{
-        font-size: max(30px, 100%) !important; 
-        max-width: 260px;
+       
     }
 
     #menu-list{
@@ -762,6 +832,51 @@ ul li a:hover {
     }
 
     .title-content h1{
-        font-size: max(20px, 2vw); 
+        font-size: max(20px, 2vw);
+        
+        
     }
+
+    .title-container{
+      
+        width: max(5vmin, 300px);
+        padding: 20px;
+        margin: 0;
+       
+        position: absolute;
+        bottom: 10%;
+       
+     
+    }
+
+    .main h2{
+
+   
+        font-size:max(5vmin, 30px);
+
+      
+    }
+    
+  
+ 
+
+
 }
+
+
+@media screen and (max-width:350px) {
+
+    .main{
+    
+        background-size:max(35vmin, 100px);
+
+    
+    }
+        
+    .triangle{
+       height: 50%;
+    }
+
+
+}
+
